@@ -1,6 +1,6 @@
 import express from "express";
 import  {conectarDB} from "./db.js";
-import tareasRouter from "./tarea.js"
+import tareasRouter from "./tareas.js"
 
 conectarDB();
 
