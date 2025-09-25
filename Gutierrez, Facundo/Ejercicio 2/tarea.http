@@ -1,0 +1,27 @@
+@url = http://localhost:3000
+### Listado de tareas
+GET {{url}}/tareas
+
+
+### Detalles de tareas
+GET {{url}}/tareas?completada=false
+
+### Crear tareas
+POST {{url}}/tareas
+Content-Type: application/json
+
+{
+  "nombre": "Hacer un corte",
+  "completada": false
+}
+
+### Modificar tareas
+PUT {{url}}/tareas/1
+Content-Type: application/json
+
+{
+ "nombre": "Connectar con mysql",
+  "completada": true 
+}
+### Quitar tareas
+DELETE {{url}}/tareas/3
