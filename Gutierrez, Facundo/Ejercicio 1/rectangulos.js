@@ -37,7 +37,7 @@ const verificarValidaciones = (req, res, next) => {
   next();
 };
 
-// GET para obtener todos los rectángulos
+// GET para obtener todos los rectangulos
 router.get("/", async (req, res) => {
   const sql = "SELECT * FROM rectangulos ORDER BY id ";
   const [rows] = await db.execute(sql);
@@ -49,7 +49,7 @@ router.get("/", async (req, res) => {
   });
 });
 
-// GET para obtener detalle de rectángulo
+// GET para obtener detalle de rectangulo
 router.get("/:id", validarID, verificarValidaciones, async (req, res) => {
   const id = Number(req.params.id);
 
