@@ -1,12 +1,12 @@
 @url = http://localhost:3000
-### Listado de productos
+### Listado de rectangulos
 GET {{url}}/rectangulos
 
 
-### Detalles de producto
-GET {{url}}/rectangulos/1
+### Detalles de rectangulos
+GET {{url}}/rectangulos/2
 
-### Crear producto
+### Crear rectangulo
 POST {{url}}/rectangulos
 Content-Type: application/json
 
@@ -15,7 +15,7 @@ Content-Type: application/json
     "base": 10.5
 }
 
-### Modificar producto
+### Modificar rectangulo
 PUT {{url}}/rectangulos/2
 Content-Type: application/json
 
@@ -24,5 +24,5 @@ Content-Type: application/json
     "base": 8.8
     
 }
-### Quitar producto
+### Quitar rectangulo
 DELETE {{url}}/rectangulos/4
