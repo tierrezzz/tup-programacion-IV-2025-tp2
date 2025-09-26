@@ -42,7 +42,7 @@ router.get("/:id", validarID, verificarValidaciones, async (req, res) => {
   res.json({ success: true, data: rows[0] });
 });
 
-// Obtener todos los alumnos de una materia específica
+// Obtener todos los alumnos de una materia especifica
 router.get(
   "/:id/alumnos",
   validarID,

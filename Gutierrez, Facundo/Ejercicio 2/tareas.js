@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Validaciones
 const validarTarea = [
-  body("nombre", "Nombre invalido")
+  body("nombre", "Nombre invalido").isAlpha("es-ES", {ignore: " "})
     .isString()
     .trim()
     .isLength({ min: 3, max: 100 }),

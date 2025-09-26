@@ -2,7 +2,6 @@
 ### Listado de tareas
 GET {{url}}/tareas
 
-
 ### Detalles de tareas
 GET {{url}}/tareas?completada=false
 
@@ -11,8 +10,8 @@ POST {{url}}/tareas
 Content-Type: application/json
 
 {
-  "nombre": "Hacer un corte",
-  "completada": false
+  "nombre": "Hacer una api",
+  "completada": true
 }
 
 ### Modificar tareas
