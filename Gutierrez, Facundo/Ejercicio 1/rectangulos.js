@@ -4,7 +4,7 @@ import { db } from "./db.js";
 
 const router = express.Router();
 
-// Funciones auxiliares para cálculos
+// Funciones auxiliares para calculos
 const calcularPerimetro = (base, altura) => {
   return 2 * (parseFloat(base) + parseFloat(altura));
 };

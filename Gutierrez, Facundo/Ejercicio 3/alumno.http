@@ -1,0 +1,35 @@
+@url = http://localhost:3000
+### Listado de Alumnos
+GET {{url}}/alumnos
+
+### Listado de Alumnos con filtro de id
+GET {{url}}/alumnos/
+
+### Crear Alumno
+POST {{url}}/alumnos
+Content-Type: application/json
+
+{
+    "nombre": "Facundo Uriel Gutierrez",
+    "materia_id": 3,
+    "nota1": 10, 
+    "nota2": 5,
+    "nota3": 8
+}
+### Modificar Alumno
+PUT {{url}}/alumnos/2
+Content-Type: application/json
+
+{
+   "nombre": "Juan Gomez",
+    "materia_id": 1,
+    "nota1": 8, 
+    "nota2": 3,
+    "nota3": 10
+    
+}
+### Quitar Alumno
+DELETE {{url}}/alumnos/3
+
+
+
