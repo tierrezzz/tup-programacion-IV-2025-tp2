@@ -3,7 +3,7 @@
 GET {{url}}/materias
 
 ### Filtro de alumnos por materia
-GET {{url}}/materias/1/alumnos
+GET {{url}}/materias/3/alumnos
 
 ### Crear materia
 POST {{url}}/materias
